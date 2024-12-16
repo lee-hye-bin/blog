@@ -1,0 +1,165 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif; /* 본고딕 적용 */
+  background-color: #fff; /* 전반적인 배경 색상 */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9fafc; 
+  color: #333;
+  height: 80px;
+}
+nav .logo{
+  margin-left: 50px; 
+  font-size: 25px;
+  cursor: pointer;
+}
+nav ul{
+  display: flex;
+  margin-right: 50px;
+  gap: 15px;
+}
+nav ul li a:hover{text-decoration: underline;}
+
+/* content */
+.content{
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-y: auto;
+  height: calc(100vh - 130px);
+  background-color: #fff;
+}
+
+/* content-home */
+.journalLayout{
+  margin: 20px 10px;
+  border: 1px solid #000;
+  padding: 2rem;
+  color: #353f4b;
+  border-radius: 10px;
+  text-align: center;
+}
+.posts{
+  text-align: left;
+}
+
+.postCard{
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.postCard p{
+  margin-bottom: 10px;
+  color: #666;
+}
+.likeBtn{
+  font-size: 20px;
+  padding: 0 10px 0 0;
+}
+.likeBtn.liked{
+  color: crimson;
+}
+
+/* comment Section */
+.commentWrap{
+
+}
+.commentToggleBtn{
+  background-color: #adc2dd;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .3s;
+}
+.commentToggleBtn:hover{background-color: #7488a3;}
+.commentAddBtn{
+  background-color: #c0addd;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .3s;
+}
+.commentAddBtn:hover{background-color: #7488a3;}
+input{
+  width: 80%;
+}
+.commentList{}
+.commentList li{
+  background-color: #eff1f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #dee3f5;
+}
+.editBtn{
+  background-color: #fbf8ff;
+  color: #c0addd;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 1px solid #c5b2e2;
+}
+.deleteBtn{
+  background-color: #eaf0f8;
+  color: #7488a3;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 1px solid #536c8d;
+}
+.reple{
+  display: flex;
+  gap: 10px;
+  width: 93%;
+  margin: auto;
+}
+.reple input[type=text]{
+  flex: 3;
+}
+.reple button{flex: 1;}
+
+/* footer */
+.footer{
+  height: 50px;
+  background-color: #6e7583;
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+}
